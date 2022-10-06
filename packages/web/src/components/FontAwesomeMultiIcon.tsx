@@ -38,6 +38,24 @@ interface IFontAwesomeMultiIcon {
  * @param props
  * @constructor
  */
+
+/**
+ * 예제:
+ * <FontAwesomeMultiIcon
+ *   tailwindMaxWidth={14}
+ *   tailwindMaxHeight={14}
+ *   icons={[
+ *     {
+ *       icon: ['fas', 'comment'],
+ *       className: 'w-6 h-6 text-white',
+ *     },
+ *     {
+ *       icon: ['fas', 'ban'],
+ *       className: 'w-14 h-14 text-red-600',
+ *     },
+ *   ]}
+ * />
+ */
 const FontAwesomeMultiIcon: React.FC<IFontAwesomeMultiIcon> = ({
   tailwindMaxWidth = 0,
   tailwindMaxHeight = 0,
