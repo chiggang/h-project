@@ -1,0 +1,94 @@
+/* Button: 뉴런 라벨 */
+@keyframes ani-neuron-button {
+  0% {
+    transform: scale(1.1) translateZ(0);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    transform: scale(1) translateZ(0);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes ani-neuron-button-hover {
+  0% {
+    transform: scale(1) translateZ(0);
+  }
+  100% {
+    transform: scale(1.2) translateZ(0);
+    background-color: rgb(0, 0, 0);
+  }
+}
+@keyframes ani-neuron-button-active {
+  0% {
+    transform: scale(1.2) translateZ(0);
+  }
+  100% {
+    transform: scale(1.2) translateZ(0);
+    background-color: rgb(39, 39, 39);
+  }
+}
+.neuron-button {
+  cursor: pointer !important;
+  animation: ani-neuron-button 0.3s ease-out forwards;
+}
+.neuron-button:hover {
+  animation: ani-neuron-button-hover 0.3s ease-out forwards;
+}
+.neuron-button:active {
+  animation: ani-neuron-button-active 0.1s ease-out forwards;
+}
+
+/* 뉴런 상세 정보 레이어 */
+.layer-object {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(150, 150, 150, 0.1);
+  border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes ani-layer-frame {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.layer-frame {
+  animation: ani-layer-frame 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    forwards;
+}
+/* 뉴런 상세 정보 레이어 > 내용 영역 */
+.layer-object .layer-content {
+  height: calc(100% - 2.25rem);
+}
+
+/* 버튼 마우스 이벤트: 기본 */
+.button-event {
+  cursor: pointer !important;
+}
+.button-event:hover {
+  opacity: 0.8 !important;
+}
+.button-event:active {
+  /*transform: translate(1px, 1px) !important;*/
+  transform: translateY(1px) !important;
+}
+
+/* 배경색 */
+.webgl-background-color {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: rgb(10, 95, 172);
+  --tw-gradient-to: rgb(23, 69, 88);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+/* 텍스트 그림자 */
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.text-shadow-xs {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}

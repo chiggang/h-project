@@ -1,0 +1,30 @@
+{
+  "server": {
+    "_comment": {
+      "port": "서버 포트 번호"
+    },
+    "port": 17000
+  },
+  "jwt": {
+    "_comment": {
+      "jwtSecret": "JWT 비밀코드",
+      "expiresIn": "만료시간(ms: 숫자만, 초: 1s, 분: 2m, 시간: 3h, 일: 4d, 년: 5y)"
+    },
+    "jwtSecret": "h.project.2022",
+    "expiresIn": "15d"
+  },
+  "database": {
+    "_comment": {
+      "user": "로그인 아이디",
+      "password": "로그인 비밀번호",
+      "host": "서버 IP 주소",
+      "port": "포트 번호",
+      "database": "데이터베이스 이름"
+    },
+    "user": "sysnova",
+    "password": "sysnova1!",
+    "host": "linaslab.info",
+    "port": 5432,
+    "database": "sysnova"
+  }
+}

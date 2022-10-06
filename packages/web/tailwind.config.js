@@ -1,0 +1,145 @@
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'media',
+  theme: {
+    zIndex: {
+      0: 0,
+      10: 10,
+      20: 20,
+      30: 30,
+      40: 40,
+      50: 50,
+      60: 60,
+      70: 70,
+      80: 80,
+      90: 90,
+      100: 100,
+      auto: 'auto',
+    },
+    fontSize: {
+      '4xs': '.6rem',
+      '3xs': '.65rem',
+      '2xs': '.7rem',
+      xs: '.75rem',
+      sm: '.875rem',
+      tiny: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': [
+        '1.5rem',
+        {
+          lineHeight: '2rem',
+        },
+      ],
+      '3xl': [
+        '1.875rem',
+        {
+          lineHeight: '2.25rem',
+        },
+      ],
+      '4xl': [
+        '2.25rem',
+        {
+          lineHeight: '2.5rem',
+        },
+      ],
+      '5xl': [
+        '3rem',
+        {
+          lineHeight: '1',
+        },
+      ],
+      '6xl': [
+        '3.75rem',
+        {
+          lineHeight: '1',
+        },
+      ],
+      '7xl': [
+        '4.5rem',
+        {
+          lineHeight: '1',
+        },
+      ],
+      '8xl': [
+        '6rem',
+        {
+          lineHeight: '1',
+        },
+      ],
+      '9xl': [
+        '8rem',
+        {
+          lineHeight: '1',
+        },
+      ],
+    },
+    backgroundColor: (theme) => ({
+      ...theme('colors'),
+      'black-100': '#EEEEEE',
+      'black-200': '#DDDDDD',
+      'black-300': '#CCCCCC',
+      'black-400': '#BBBBBB',
+      'black-500': '#AAAAAA',
+      'black-600': '#999999',
+      'black-700': '#888888',
+      'black-800': '#777777',
+      'black-900': '#666666',
+      'black-1000': '#555555',
+      'black-1100': '#444444',
+      'black-1200': '#333333',
+      'black-1300': '#222222',
+      'black-1400': '#111111',
+    }),
+    extend: {
+      lineHeight: {
+        1: '0.25rem',
+        2: '0.5rem',
+      },
+      spacing: {
+        68: '17rem',
+        76: '19rem',
+        84: '21rem',
+        88: '22rem',
+        92: '23rem',
+        100: '25rem',
+        104: '26rem',
+        108: '27rem',
+        112: '28rem',
+        116: '29rem',
+        120: '30rem',
+        124: '31rem',
+        128: '32rem',
+        132: '33rem',
+        136: '34rem',
+        140: '35rem',
+        144: '36rem',
+        148: '37rem',
+        152: '38rem',
+        156: '39rem',
+        160: '40rem',
+      },
+      height: (theme) => ({
+        'dynamic-full-5': 'calc(100% - 1.25rem)',
+        'dynamic-full-10': 'calc(100% - 2.5rem)',
+        'dynamic-full-12': 'calc(100% - 3rem)',
+        'dynamic-full-14': 'calc(100% - 3.5rem)',
+        'dynamic-full-16': 'calc(100% - 4rem)',
+        'dynamic-full-20': 'calc(100% - 5rem)',
+        'dynamic-full-24': 'calc(100% - 6rem)',
+        'dynamic-full-28': 'calc(100% - 7rem)',
+        'dynamic-full-32': 'calc(100% - 8rem)',
+        'dynamic-full-36': 'calc(100% - 9rem)',
+        'dynamic-full-40': 'calc(100% - 10rem)',
+      }),
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+      transform: ['hover', 'active', 'focus'],
+    },
+  },
+  plugins: [],
+};

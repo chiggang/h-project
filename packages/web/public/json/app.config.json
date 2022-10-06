@@ -1,0 +1,54 @@
+{
+  "system": {
+    "_comment": {
+      "mode": "실행 모드(개발용: development, 배포용: production)"
+    },
+    "mode": "development"
+  },
+  "api": {
+    "_comment": {
+      "commonUrl": "공용 RESTful API 주소"
+    },
+    "commonUrl": {
+      "host_": "http://192.168.0.86",
+      "host": "http://localhost",
+      "port": 17000
+    }
+  },
+  "upload": {
+    "_comment": {
+      "maximumNumberOfImage": "한번에 업로드할 이미지 파일 최대 개수",
+      "maximumNumberOfPdf": "한번에 업로드할 PDF 파일 최대 개수",
+      "imageUrl": "이미지 파일 주소",
+      "pdfUrl": "PDF 파일 주소"
+    },
+    "maximumNumberOfImage": 1,
+    "maximumNumberOfPdf": 1,
+    "imageUrl": {
+      "host": "http://linaslab.info",
+      "port": 17100,
+      "path": "/upload/image"
+    },
+    "pdfUrl": {
+      "host": "http://linaslab.info",
+      "port": 17100,
+      "path": "/upload/pdf"
+    }
+  },
+  "resource": {
+    "_comment": {
+      "imageUrl": "HTML용 이미지 파일 주소",
+      "pdfUrl": "HTML용 PDF 파일 주소"
+    },
+    "imageUrl": {
+      "host": "http://linaslab.info",
+      "port": 17100,
+      "path": "/resource/image"
+    },
+    "pdfUrl": {
+      "host": "http://linaslab.info",
+      "port": 17100,
+      "path": "/resource/pdf"
+    }
+  }
+}

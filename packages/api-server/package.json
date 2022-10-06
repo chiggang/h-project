@@ -1,0 +1,36 @@
+{
+  "name": "h-project-api",
+  "version": "0.0.1",
+  "description": "",
+  "author": "chiggang",
+  "homepage": "",
+  "private": false,
+  "license": "MIT",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "hpp": "^0.2.3",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "nanoid": "3.3.4",
+    "path": "^0.12.7",
+    "pg": "^8.8.0",
+    "prettier": "^2.7.1",
+    "socket.io": "^4.5.2"
+  }
+}

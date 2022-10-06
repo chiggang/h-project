@@ -1,0 +1,39 @@
+[
+  {
+    "index": 1,
+    "name": "Inspiration Neuron",
+    "category": "inspiration",
+    "subCategory": [
+      {
+        "name": "Origin",
+        "value": "origin"
+      },
+      {
+        "name": "Idea",
+        "value": "idea"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "name": "Research Neuron",
+    "category": "research",
+    "subCategory": [
+      {
+        "name": "Milestone",
+        "value": "milestone"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "name": "Possibility Neuron",
+    "category": "possibility",
+    "subCategory": [
+      {
+        "name": "Force",
+        "value": "force"
+      }
+    ]
+  }
+]

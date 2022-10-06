@@ -1,0 +1,36 @@
+{
+  "server": {
+    "_comment": {
+      "port": "서버 포트 번호"
+    },
+    "port": 17100
+  },
+  "upload": {
+    "_comment": {
+      "limitDayToDeleteTempFile": "임시 파일을 삭제할 최대 일수(day)",
+      "maximumNumberOfUserImage": "한번에 업로드할 사용자 이미지 최대 개수",
+      "maximumNumberOfBackgroundImage": "한번에 업로드할 마이 페이지의 배경 이미지 최대 개수",
+      "maximumNumberOfImage": "한번에 업로드할 이미지 파일 최대 개수",
+      "maximumNumberOfPdf": "한번에 업로드할 PDF 파일 최대 개수",
+      "rootPath": "업로드 최상위 경로(서버가 실행된 경로 기준의 상대 경로)",
+      "tempPath": "파일이 최초로 업로드 되는 임시 경로(서버가 실행된 경로 기준의 상대 경로)",
+      "trashPath": "최대 일수를 초과한 삭제 대상의 임시 파일이 모여있는 경로(서버가 실행된 경로 기준의 상대 경로)",
+      "userImagePath": "사용자 이미지 경로(상대 경로)",
+      "backgroundImagePath": "마이 페이지의 배경 이미지 경로(상대 경로)",
+      "imagePath": "이미지 파일 경로(서버가 실행된 경로 기준의 상대 경로)",
+      "pdfPath": "PDF 파일 경로(서버가 실행된 경로 기준의 상대 경로)"
+    },
+    "limitDayToDeleteTempFile": 7,
+    "maximumNumberOfUserImage": 1,
+    "maximumNumberOfBackgroundImage": 1,
+    "maximumNumberOfImage": 5,
+    "maximumNumberOfPdf": 3,
+    "rootPath": "../../../files",
+    "tempPath": "../../../files/_temp",
+    "trashPath": "../../../files/_trash",
+    "userImagePath": "../files/user_image",
+    "backgroundImagePath": "../files/background_image",
+    "imagePath": "../../../files/image",
+    "pdfPath": "../../../files/pdf"
+  }
+}

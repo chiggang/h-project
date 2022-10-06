@@ -1,0 +1,112 @@
+{
+  "name": "h-project-web",
+  "version": "0.0.1",
+  "description": "",
+  "author": "chiggang",
+  "homepage": "",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "export PORT=10000 && craco start",
+    "start:win": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "compile": "rimraf dist && babel src/components --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@mantine/core": "^5.0.3",
+    "@mantine/dates": "^5.2.3",
+    "@mantine/hooks": "^5.0.3",
+    "@mantine/modals": "^5.2.5",
+    "@react-three/drei": "^9.21.0",
+    "@react-three/fiber": "^8.3.1",
+    "@react-three/postprocessing": "^2.6.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "axios": "^0.27.2",
+    "bezier-js": "^6.1.0",
+    "camera-controls": "^1.36.1",
+    "dateformat": "^5.0.3",
+    "dayjs": "^1.11.5",
+    "framer-motion": "^7.2.1",
+    "lamina": "^1.1.23",
+    "lodash": "^4.17.21",
+    "nanoid": "^4.0.0",
+    "prepend-http": "^4.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-draggable": "^4.4.5",
+    "react-pdf": "^5.7.2",
+    "react-resize-detector": "^7.1.2",
+    "react-rnd": "^10.3.7",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-sortablejs": "^6.1.4",
+    "react-tsparticles": "^2.1.4",
+    "recoil": "^0.7.5",
+    "sortablejs": "^1.15.0",
+    "swr": "^1.3.0",
+    "three": "^0.143.0",
+    "tsparticles": "^2.1.4",
+    "url-join": "^5.0.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@craco/craco": "^6.4.3",
+    "@types/bezier-js": "^4.1.0",
+    "@types/dateformat": "^5.0.0",
+    "@types/jest": "^27.5.0",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "@types/react-pdf": "^5.7.2",
+    "@types/sortablejs": "^1.13.0",
+    "@types/three": "^0.143.0",
+    "eslint": "^8.14.0",
+    "eslint-config-react-app": "^7.0.1",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.6.4"
+  }
+}
